@@ -1,0 +1,27 @@
+{
+  "name": "stale-assignee",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Automatically unassign contributors after inactivity.",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^17.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotWoods/stale-assignee"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
