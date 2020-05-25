@@ -1,3 +1,4 @@
+// @ts-check
 const { GithubApi } = require('./github-api');
 const config = require('../config.js');
 
@@ -37,6 +38,7 @@ async function getCollaborators(owner, repo) {
  * @param {ReadonlySet<string>} collaborators
  */
 async function* issuesWithContributorsAssigned(owner, repo, collaborators) {
+  /** @type {import('./types').IssuesListForRepoParams} */
   const options = {
     owner,
     repo,
